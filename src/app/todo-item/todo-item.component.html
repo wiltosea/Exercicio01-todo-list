@@ -1,0 +1,4 @@
+<li>
+  <input type="checkbox" (change)="onCheckboxChange($event)" [checked]="item.completed" />
+  <span [ngClass]="textClass">{{ item.name }}</span>
+</li>

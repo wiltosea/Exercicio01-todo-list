@@ -1,0 +1,13 @@
+<div class="todo-list-container">
+  <h1>Todo-List Angular!</h1>
+  <h3>PUC MINAS - Framework Front End Angular</h3>
+
+  <div class="todo-list-input">
+    <input type="text" [(ngModel)]="listItem" />
+    <button type="submit" (click)="addNewItem()">Adicionar</button>
+  </div>
+
+  <ul>
+    <app-todo-item *ngFor="let item of items" [item]="item"></app-todo-item>
+  </ul>
+</div>
